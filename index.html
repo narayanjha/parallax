@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parallax :: Anchor tag click smooth scroll page content</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background: #3c3d3e;
+            position: fixed;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #fff;
+            padding: 1rem;
+            display: inline-block;
+            transition: 1s;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 1px solid #f4f4f4;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        section.sec1 {
+            background: url('img/architecture-bridge-buildings-1155574.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .sec1 h1 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* vertical-align: middle;
+            display: table-cell; */
+            color: #ffffff;
+            font-size: 2em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50% );
+        }
+
+        .sec1 h1 span {
+            background: rgba(0, 0, 0, 0.38);
+            border-radius: 8px;
+            transition: 0.26s;
+            padding: 40px;
+            color: rgb(253, 254, 255);
+        }
+
+        section.sec2 {
+            background: url('img/pexels-photo-1167021.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        section.sec3 {
+            background: url('img/asphalt-dawn-dusk-1323445.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        section.sec4 {
+            background: url('img/architecture-art-classic-1310788.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            display: inline-block;
+        }
+
+        section.secText {
+            padding: 50px 100px;
+            height: auto;
+        }
+        .contactForm{
+            width: 70%;
+            background: rgba(0, 0, 0, 0.28);
+            padding: 3rem;
+            margin: 0 auto;
+        }
+        .contactForm input,.contactForm input[type='number'],.contactForm textarea{
+            background: #f3f3f3;
+            border: 1px solid #f4f4f4;
+            padding: 1rem;
+            margin: 1rem 0;
+            display: block;
+            width: 100%;
+        }
+        .contactForm input:first-child{
+            margin-top: 0;   
+        }
+        .contactForm input:last-child{
+            margin-bottom: 0;   
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sec1">
+        <h1><span>Wellcome to Parallax</span></h1>
+    </section>
+    <section class="secText" id="#home">
+        <h1>Parallax</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente fuga corrupti officiis culpa aperiam
+            odio aliquid, nemo sit amet natus iste, distinctio quisquam totam ad! Facilis non adipisci corporis
+            numquam.
+        </p>
+    </section>
+    <section class="sec2" id="#about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro, accusamus accusantium,
+            reprehenderit laboriosam saepe enim deserunt, ad vero explicabo incidunt suscipit ea adipisci ut repellendus
+            tempora id nulla vitae vel ipsam optio? Voluptate repudiandae fugit quis dolor sequi quaerat nemo,
+            asperiores, aspernatur explicabo cupiditate odit voluptatem ad vero eligendi dolore eaque minus voluptatibus
+            officiis eum maxime soluta? Culpa consectetur nostrum aut tenetur, sequi, ratione placeat fugit laboriosam
+            rerum id deserunt esse iste commodi optio rem modi! Veritatis ea voluptatem nobis, id, alias expedita
+            laboriosam temporibus unde tempora iure consequuntur. Eos quam harum ex quas, iure quo, nemo quasi fugit
+            pariatur reiciendis accusamus! Doloribus aperiam, laboriosam ipsam sint incidunt modi. Libero tempore omnis
+            fugit sit harum temporibus, doloribus quam? Enim eligendi voluptate corporis iure similique nostrum
+            voluptatem, reiciendis quos tenetur quisquam ab a vel nulla, provident totam neque incidunt minus molestias
+            eum architecto officia id ut? Laboriosam blanditiis facere nobis accusamus voluptatum. Labore officiis
+            deleniti voluptatibus, soluta quia odio consequuntur deserunt nam non ipsum dolorem quam, cumque quo aut
+            corrupti? Perferendis voluptatum esse cum earum repellat culpa animi quo provident, deserunt velit totam
+            ducimus. Repellat adipisci consectetur, eos omnis saepe corrupti! Quasi minus necessitatibus, iure eligendi
+            ea excepturi pariatur praesentium, consequuntur minima architecto soluta, error quos eum commodi explicabo
+            expedita. Aut quam placeat quibusdam nisi optio unde veritatis, harum adipisci incidunt saepe eum facilis
+            sequi, natus cum iusto ducimus. Modi, neque accusamus! Explicabo dignissimos saepe corporis dolores harum
+            possimus dolor laborum atque ullam praesentium. Laudantium similique sint maiores quo, magni iste error
+            suscipit atque ducimus dolorum quia, est, neque libero corporis dignissimos sunt magnam incidunt. Cupiditate
+            similique vel provident minus blanditiis commodi molestiae, a nostrum, in at libero enim cum laudantium
+            dignissimos qui fugiat, voluptatibus illo officiis quidem. Soluta ut doloremque quam? Porro accusantium
+            perferendis unde accusamus modi, sed, nulla, explicabo quaerat laboriosam consectetur neque distinctio
+            voluptatibus? Explicabo assumenda sapiente repudiandae modi. Eligendi commodi magni numquam error itaque
+            minima quos consectetur odit, voluptates hic autem corporis. Aliquid corrupti voluptate, ratione
+            necessitatibus laborum magnam consequuntur, ad possimus expedita fugit excepturi reprehenderit quis
+            distinctio. Maiores harum rerum quidem quasi ex nulla amet ipsum dignissimos eligendi cum aspernatur
+            repellendus earum corrupti dolorum, sit dolores ratione qui magni vel, blanditiis doloremque tenetur
+            aperiam! Assumenda doloremque praesentium similique voluptates sit, tempora cumque ea explicabo id delectus
+            fugiat iusto, veritatis quaerat magni eligendi voluptatem. Aliquam iure sed exercitationem nisi optio sequi
+            ullam aut minima ut ipsum fuga quia error, rerum quis molestiae ducimus ipsa maiores reiciendis eius numquam
+            corporis non accusamus qui! Fuga, pariatur voluptas ullam debitis modi a saepe nisi maiores excepturi
+            voluptatem, voluptates nobis, culpa iusto! Eum fuga quas provident, vero veritatis ex facilis reiciendis
+            voluptatem non explicabo expedita doloribus nesciunt officia dicta. Minima porro delectus odit temporibus
+            praesentium, officia ad. Quis laborum modi, aliquid provident perferendis quisquam! Nobis voluptatibus
+            deleniti assumenda deserunt explicabo iste sit illo quas eos. Ad voluptates, aperiam mollitia nam odio iure
+            ea repellat unde! A amet, praesentium quam soluta officia architecto similique! Delectus architecto voluptas
+            quos doloribus corporis quaerat.</p>
+    </section>
+    <section class="sec3" id="#portfolio">
+        <article>
+            <aside>
+                <img src="" alt="">
+            </aside>
+        </article>
+    </section>
+    <section class="sec4" id="#contact">
+        <div class="contactForm">
+            <form action="" method="post">
+                <input type="text" name="name" id="name" placeholder="Fullname">
+                <input type="number" name="mobile" id="mobile" placeholder="Mobile Number">
+                <input type="email" name="email" id="email" placeholder="Email ID">
+                <input type="date" name="date" id="date" placeholder="Appointment Date">
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
